@@ -6,3 +6,6 @@ public class StreamComparator implements Comparator<Stream> {
         return Integer.compare(s1.getStudentGroups().size(), s2.getStudentGroups().size());
     }
 }
+
+//Класс StreamComparator следует OCP, так
+//как его можно расширять(например, добавив другие методы сравнения),но при этом не нужно модифицировать существующий код.

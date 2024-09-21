@@ -14,12 +14,12 @@ public class StudenGroupIterator implements Iterator<Student> {
 
     @Override
     public boolean hasNext() {
-        return count < studentList.size() -1;
+        return count < studentList.size() - 1;
     }
 
     @Override
     public Student next() {
-        if (!hasNext()){
+        if (!hasNext()) {
             return null;
         }
         count++;
